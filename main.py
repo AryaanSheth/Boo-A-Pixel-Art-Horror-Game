@@ -203,7 +203,7 @@ class player(pg.sprite.Sprite):
         self.fog = pg.Surface((1280, 720))
         self.fog.fill(pg.Color('#33142b'))
         self.light_mask = shadows
-        self.light_mask = pg.transform.scale(self.light_mask, (200, 200))
+        self.light_mask = pg.transform.scale(self.light_mask, (300, 300))
         self.light_rect = self.light_mask.get_rect()
 
     def render_fog(self):
@@ -303,8 +303,14 @@ class player(pg.sprite.Sprite):
 
         if key_state[pg.K_w]:
             self.speed[1] = -3
+            self.left = False
+            self.right = True
+            self.idle = False
         elif key_state[pg.K_s]:
             self.speed[1] = 3
+            self.left = False
+            self.right = True
+            self.idle = False
         self.rect.x += self.speed[0]
         self.rect.y += self.speed[1]
         if key_state[pg.K_SPACE]:
@@ -484,6 +490,7 @@ def main():
                 if enemy.dead:
                     enemy_sprites.remove(enemy)
             screen.fill(pg.Color('#33142b'))
+            map_render.tile_rects.clear()
             map_render.render_tiles()
             player.colliders()
             player.Attack()
