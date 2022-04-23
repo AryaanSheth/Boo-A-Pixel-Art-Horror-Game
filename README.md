@@ -8,4 +8,22 @@ But be warned! Legend has it that the ghost king lives in the mansion, so you be
 ## Gameplay
 A close range horror game where u mush find the key at each level to progress down the 10 rooms of the house to see what the mystery is all about. Alas, phantoms lurk around every corner and with it being so dark one might see a ghost after it's to late.
 
+## Demo
+https://www.youtube.com/watch?v=HDMdKgIMgIM&ab_channel=spretzelz
 
+## Clone
+
+To deploy this project run
+
+```bash
+  https://github.com/AryaanSheth/Boo-A-Pixel-Art-Horror-Game
+```
+
+### Install Dependencies
+```bash
+  pip install pygame
+  pip install pygame.mixer
+```
+
+## Requirements
+#### Python 3.10.x
