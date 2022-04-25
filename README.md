@@ -26,4 +26,4 @@ To clone this project run
 ```
 
 ## Requirements
-#### Python 3.10.x
+#### [Python 3.10.x](https://www.python.org/)
