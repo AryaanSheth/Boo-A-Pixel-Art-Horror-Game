@@ -13,10 +13,10 @@ https://www.youtube.com/watch?v=HDMdKgIMgIM&ab_channel=spretzelz
 
 ## Clone
 
-To deploy this project run
+To clone this project run
 
 ```bash
-  https://github.com/AryaanSheth/Boo-A-Pixel-Art-Horror-Game
+  git clone https://github.com/AryaanSheth/Boo-A-Pixel-Art-Horror-Game
 ```
 
 ### Install Dependencies
